@@ -1,0 +1,48 @@
+
+$primary: #1f2833;
+$family-sans-serif: 'Roboto Slab', serif;
+$family-primary: 'Roboto Slab', serif;
+$family-secondary: 'Open Sans', sans-serif;
+
+@import "../../node_modules/bulma/bulma.sass";
+
+
+/************HEADER**************/
+header{
+    .logo{
+        font-family: $family-secondary;
+        font-weight: 700;
+    }
+}
+
+main{
+
+    .about-me{
+        img{
+            object-fit: cover;
+            max-height: 400px;
+        }
+    }
+    .showcase{
+        img{
+            object-fit: contain;
+            max-height: 400px;
+        }
+
+        .columns{
+            display: flex !important;
+            flex-direction: column !important;
+        }
+        .order-1{
+            @media(max-width: $tablet){
+                order: 1;
+            }
+        }
+        .order-2{
+            @media(max-width: $tablet){
+                order: 2;
+            }
+        }
+    }
+    
+}
