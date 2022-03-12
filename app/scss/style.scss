@@ -30,8 +30,10 @@ main{
         }
 
         .columns{
-            display: flex !important;
-            flex-direction: column !important;
+            @media(max-width: $tablet){
+                display: flex !important;
+                flex-direction: column !important;
+            }
         }
         .order-1{
             @media(max-width: $tablet){
